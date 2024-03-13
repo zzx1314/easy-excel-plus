@@ -1,7 +1,8 @@
 package com.pure.easyexcel.head;
 
 import com.pure.easyexcel.annotation.ResponseExcel;
-import jakarta.servlet.http.HttpServletResponse;
+
+import javax.servlet.http.HttpServletResponse;
 
 
 /**

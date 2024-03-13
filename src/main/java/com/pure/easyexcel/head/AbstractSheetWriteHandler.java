@@ -18,7 +18,6 @@ import com.pure.easyexcel.converters.LocalDateTimeStringConverter;
 import com.pure.easyexcel.enhance.WriterBuilderEnhancer;
 import com.pure.easyexcel.handler.SheetWriteHandler;
 import com.pure.easyexcel.tool.ExcelException;
-import jakarta.servlet.http.HttpServletResponse;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -38,6 +37,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.InputStream;
 import java.lang.reflect.Modifier;

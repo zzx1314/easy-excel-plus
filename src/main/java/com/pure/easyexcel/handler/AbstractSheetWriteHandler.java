@@ -19,7 +19,6 @@ import com.pure.easyexcel.head.HeadGenerator;
 import com.pure.easyexcel.head.HeadMeta;
 import com.pure.easyexcel.head.I18nHeaderCellWriteHandler;
 import com.pure.easyexcel.tool.ExcelException;
-import jakarta.servlet.http.HttpServletResponse;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -39,6 +38,7 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.InputStream;
 import java.lang.reflect.Modifier;

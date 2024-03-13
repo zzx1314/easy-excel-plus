@@ -7,10 +7,10 @@ import com.pure.easyexcel.annotation.ResponseExcel;
 import com.pure.easyexcel.config.ExcelConfigProperties;
 import com.pure.easyexcel.enhance.WriterBuilderEnhancer;
 import com.pure.easyexcel.tool.ExcelException;
-import jakarta.servlet.http.HttpServletResponse;
 import lombok.SneakyThrows;
 import org.springframework.beans.factory.ObjectProvider;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**

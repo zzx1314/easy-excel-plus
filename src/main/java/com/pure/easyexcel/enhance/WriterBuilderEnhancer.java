@@ -4,7 +4,8 @@ import com.alibaba.excel.write.builder.ExcelWriterBuilder;
 import com.alibaba.excel.write.builder.ExcelWriterSheetBuilder;
 import com.pure.easyexcel.annotation.ResponseExcel;
 import com.pure.easyexcel.head.HeadGenerator;
-import jakarta.servlet.http.HttpServletResponse;
+
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * WriterBuilderEnhancer. ExcelWriterBuilder 增强.

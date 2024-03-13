@@ -1,7 +1,6 @@
 package com.pure.easyexcel.handler;
 
 import com.pure.easyexcel.annotation.ResponseExcel;
-import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.MethodParameter;
@@ -10,6 +9,7 @@ import org.springframework.web.context.request.NativeWebRequest;
 import org.springframework.web.method.support.HandlerMethodReturnValueHandler;
 import org.springframework.web.method.support.ModelAndViewContainer;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**

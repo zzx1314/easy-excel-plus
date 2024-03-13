@@ -7,7 +7,6 @@ import com.pure.easyexcel.config.ExcelConfigProperties;
 import com.pure.easyexcel.handler.ResponseExcelReturnValueHandler;
 import com.pure.easyexcel.processor.NameProcessor;
 import com.pure.easyexcel.processor.NameSpelExpressionProcessor;
-import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -18,6 +17,7 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.HandlerMethodReturnValueHandler;
 import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 

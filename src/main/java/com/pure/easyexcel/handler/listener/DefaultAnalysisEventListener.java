@@ -3,9 +3,9 @@ package com.pure.easyexcel.handler.listener;
 import com.alibaba.excel.context.AnalysisContext;
 import com.pure.easyexcel.message.ErrorMessage;
 import com.pure.easyexcel.tool.Validators;
-import jakarta.validation.ConstraintViolation;
 import lombok.extern.slf4j.Slf4j;
 
+import javax.validation.ConstraintViolation;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
