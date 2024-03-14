@@ -1,0 +1,14 @@
+### 上传接口请求
+POST http://localhost:8087/eplus/importExcel
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="exportExcel.xlsx"
+Content-Type: multipart/form-data
+
+< D:\exportExcel.xlsx
+--WebAppBoundary--
+
+### 下载接口请求
+GET http://localhost:8087/eplus/exportExcel
+Accept: */*
