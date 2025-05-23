@@ -1,5 +1,7 @@
 package webcase.controller;
 
+import com.alibaba.fastjson2.JSON;
+import com.alibaba.fastjson2.JSONObject;
 import com.pure.easyexcel.annotation.RequestExcel;
 import com.pure.easyexcel.annotation.ResponseExcel;
 import com.pure.easyexcel.message.ErrorMessage;
@@ -9,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import webcase.dto.DemoData;
 import webcase.dto.UserDto;
 
 import java.util.ArrayList;
@@ -35,12 +38,10 @@ public class TestController {
      * 导入
      */
     @PostMapping("/importExcel")
-    public void importExcel(@RequestExcel List<UserDto> dataList, BindingResult bindingResult) {
+    public void importExcel(@RequestExcel(headRowNumber = 2) List<DemoData> dataList, BindingResult bindingResult) {
         List<ErrorMessage> errorMessageList = (List<ErrorMessage>) bindingResult.getTarget();
-        log.info("errorMessageList:{}", errorMessageList);
-        for (UserDto userDto : dataList) {
-            System.out.println(userDto);
-        }
+        log.info("errorMessageList:{}", JSONObject.toJSONString(errorMessageList));
+        log.info("dataList:{}", JSON.toJSONString(dataList));
     }
 
 
